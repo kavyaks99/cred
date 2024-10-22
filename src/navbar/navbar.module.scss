@@ -1,0 +1,13 @@
+.navbar {
+  @apply text-white pt-20 pl-36 pr-36;
+
+  .navbar_container {
+    @apply flex flex-row justify-between;
+  }
+  .cred_logo {
+    @apply text-[25px] font-extrabold tracking-widest;
+  }
+  .btn_toggle {
+    @apply border-zinc-700 border-[1px] p-6;
+  }
+}

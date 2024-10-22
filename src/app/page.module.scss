@@ -1,0 +1,80 @@
+.main {
+  .head_container {
+    @apply flex justify-center items-center flex-col pt-16;
+  }
+  .header {
+    @apply text-white text-[114px]  leading-none font-extrabold font-serif flex justify-center items-center text-center tracking-tight;
+  }
+  .sub_header {
+    @apply text-[20px] text-zinc-200 font-sans text-center pt-8 tracking-wide;
+  }
+
+  .video {
+    @apply absolute top-0 left-0 min-w-[100%] min-h-[100%] object-cover;
+    z-index: -1000;
+  }
+  .detail_container {
+    @apply text-white flex justify-center items-center h-auto;
+    .details {
+      @apply flex flex-col w-[48%]  mt-[150px];
+      .detail_header {
+        @apply text-[28px] font-medium tracking-widest font-sans text-left;
+      }
+      .detail_content {
+        @apply mt-20 text-[70px] tracking-wider  font-serif;
+      }
+    }
+  }
+  .description_one {
+    @apply flex flex-col justify-center items-center mt-20;
+    .text {
+      @apply text-[113px] font-bold text-white font-serif leading-none text-center tracking-tight;
+    }
+    .sub_text {
+      @apply text-[22px] text-white font-sans text-center pt-12 leading-10 tracking-wide opacity-[0.5];
+    }
+  }
+  .description_two {
+    @apply mt-20 relative;
+    border-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0),
+        rgb(74, 73, 73),
+        rgb(0, 0, 0)
+      )
+      1 / 1 / 0 stretch;
+    border-width: 1px;
+    border-style: solid;
+    .fold_video {
+      @apply object-cover block w-full h-auto;
+    }
+    .text_overlay {
+      @apply absolute top-1/4 left-[10%] flex justify-center  text-left flex-col;
+      z-index: 1;
+      .text_two {
+        @apply text-[90px] font-serif text-white font-bold tracking-tight leading-none;
+      }
+      .sub_text {
+        @apply text-[22px] text-white font-sans pt-12 leading-10 tracking-wide opacity-[0.5] text-left;
+      }
+    }
+  }
+  .description_three {
+    @apply pl-32 mt-[10%] pb-32;
+    .text_two {
+      @apply text-[90px] font-serif text-white font-bold tracking-tight leading-none;
+    }
+    .card_container {
+      @apply flex flex-nowrap pt-20 gap-5;
+      overflow: auto;
+      scrollbar-width: none;
+      .card {
+        @apply border-[1px] min-w-[400px] h-[72vh] border-zinc-700;
+        // background-image: url(../assets/images/scan.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+      }
+    }
+  }
+}
