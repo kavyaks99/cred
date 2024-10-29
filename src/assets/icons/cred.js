@@ -1,11 +1,11 @@
 import React from "react";
 
-function CredIcon() {
+function CredIcon({ height, width }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="74"
-      height="88"
+      width={width}
+      height={height}
       viewBox="0 0 74 88"
       fill="none"
     >

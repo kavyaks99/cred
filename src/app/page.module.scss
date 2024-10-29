@@ -66,15 +66,38 @@
     }
     .card_container {
       @apply flex flex-nowrap pt-20 gap-5;
+
       overflow: auto;
       scrollbar-width: none;
       .card {
-        @apply border-[1px] min-w-[400px] h-[72vh] border-zinc-700;
-        // background-image: url(../assets/images/scan.webp);
+        @apply border-[1px] min-w-[500px] h-[72vh] border-zinc-700;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center bottom;
       }
     }
+  }
+  .description_four {
+    border-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0),
+        rgb(74, 73, 73),
+        rgb(0, 0, 0)
+      )
+      1 / 1 / 0 stretch;
+    border-width: 1px;
+    border-style: solid;
+    @apply mt-[250px] relative mb-36;
+  }
+  .description_five {
+    border-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0),
+        rgb(74, 73, 73),
+        rgb(0, 0, 0)
+      )
+      1 / 1 / 0 stretch;
+    border-width: 1px;
+    border-style: solid;
   }
 }

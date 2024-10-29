@@ -7,7 +7,7 @@ function Navbar() {
       <div className={styles.navbar}>
         <ul className={styles.navbar_container}>
           <li className={styles.cred_logo}>
-            <CredIcon />
+            <CredIcon height={88} width={74} />
           </li>
           <li>
             <button className={styles.btn_toggle}>
