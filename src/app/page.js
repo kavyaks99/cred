@@ -5,11 +5,9 @@ import Arrow from "@/assets/icons/arrow";
 import CredIcon from "@/assets/icons/cred";
 import Accordion from "@/components/accordion/accordion";
 import DownloadCred from "@/components/credDownload/downloadCred";
+import StoryCred from "@/components/story/storyCred";
 
 export default function Home() {
-  const text =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident";
-  const words = text.split(" ");
   const cardData = [
     {
       id: 1,
@@ -114,16 +112,7 @@ export default function Home() {
           trustworthy to make financial progress
         </div>
       </div>
-      <div className={styles.detail_container}>
-        <div className={styles.details}>
-          <p className={styles.detail_header}>NOT EVERYONE MAKES IT IN.</p>
-          <div className={styles.detail_content}>
-            {words.map((word, index) => (
-              <span key={index}>{word} </span>
-            ))}
-          </div>
-        </div>
-      </div>
+      <StoryCred />
       <div>
         <video src="/phone-ticker.mp4" loop muted autoPlay></video>
       </div>

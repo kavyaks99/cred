@@ -14,7 +14,16 @@
     z-index: -1000;
   }
   .detail_container {
-    @apply text-white flex justify-center items-center h-auto;
+    border-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0),
+        rgb(74, 73, 73),
+        rgb(0, 0, 0)
+      )
+      1 / 1 / 0 stretch;
+    border-width: 1px;
+    border-style: solid;
+    @apply text-white flex justify-center items-center h-auto pb-52;
     .details {
       @apply flex flex-col w-[48%]  mt-[150px];
       .detail_header {
