@@ -4,7 +4,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import styles from "../../app/page.module.scss";
 import { ScrollTrigger } from "gsap/all";
-function StoryCred() {
+
+function MembershipIntroSection() {
   const text =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident";
   const words = text.split(" ");
@@ -20,10 +21,9 @@ function StoryCred() {
           trigger: `.${styles.detail_content}`,
           start: "top center",
           end: "bottom center",
-          markers: true,
           scrub: 0.5,
         },
-        stagger: 0.2,
+        stagger: 0.6,
       }
     );
   }, []);
@@ -44,4 +44,4 @@ function StoryCred() {
   );
 }
 
-export default StoryCred;
+export default MembershipIntroSection;

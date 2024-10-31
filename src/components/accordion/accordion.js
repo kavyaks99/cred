@@ -38,7 +38,7 @@ function Accordion() {
 
   const { title, content } = accordionData;
   return (
-    <div>
+    <div class="border-t border-b border-zinc-600 p-16 text-white cursor-pointer">
       <div className="accordion-item">
         <div className="accordion-title" onClick={() => setIsActive(!isActive)}>
           <div class="text-zinc-300 text-[30px] font-medium tracking-[10px] text-center flex flex-row items-center justify-center">
