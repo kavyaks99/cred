@@ -12,23 +12,26 @@ import CardBenefitsSection from "@/components/cardBenefits/cardBenefitsSection";
 import MemberBenefitsSection from "@/components/memberBenefits/memberBenefitsSection";
 import MembershipIntroSection from "@/components/memebershipIntro/membershipIntroSection";
 import HeaderSection from "@/components/header/headerSection";
+import Lenis from "@/components/scroll";
 
 export default function Home() {
   return (
-    <div className={styles.main}>
-      <Navbar />
-      <HeaderSection />
-      <MembershipIntroSection />
-      <MemberBenefitsSection />
-      <CardBenefitsSection />
-      <PaymentsSection />
-      <RewardSection />
-      <DataPrivacySection />
-      <UserTrustSection />
-      <MembershipSection />
-      <Accordion />
-      <DetailedFooterSection />
-      <FooterBaseSection />
-    </div>
+    <Lenis orientation="vertical">
+      <div className={styles.main}>
+        <Navbar />
+        <HeaderSection />
+        <MembershipIntroSection />
+        <MemberBenefitsSection />
+        <CardBenefitsSection />
+        <PaymentsSection />
+        <RewardSection />
+        <DataPrivacySection />
+        <UserTrustSection />
+        <MembershipSection />
+        <Accordion />
+        <DetailedFooterSection />
+        <FooterBaseSection />
+      </div>
+    </Lenis>
   );
 }

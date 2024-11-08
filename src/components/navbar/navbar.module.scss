@@ -1,5 +1,5 @@
 .navbar {
-  @apply text-white pt-20 pl-36 pr-36;
+  @apply text-white pt-20 pl-36 pr-36 absolute w-[100vw] z-20;
 
   .navbar_container {
     @apply flex flex-row justify-between;
@@ -8,6 +8,6 @@
     @apply text-[25px] font-extrabold tracking-widest;
   }
   .btn_toggle {
-    @apply border-zinc-700 border-[1px] p-6;
+    @apply p-6;
   }
 }

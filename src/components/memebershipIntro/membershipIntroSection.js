@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/all";
 
 function MembershipIntroSection() {
   const text =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident";
+    "the story of CRED beginswith trust. we believe individuals who've proven their trustworthiness deserve better: better experiences, better rewards, better rules. this is the status quo we're building. make it to the club, and experience the ascension yourself";
   const words = text.split(" ");
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);

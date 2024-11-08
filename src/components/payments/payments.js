@@ -1,7 +1,13 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 import styles from "../../app/page.module.scss";
 import Image from "next/image";
 import Arrow from "@/assets/icons/arrow";
+// import Lenis from "@/components/scroll";
+import Lenis from "@studio-freight/lenis";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
 function PaymentsSection() {
   const cardData = [
     {
@@ -47,6 +53,24 @@ function PaymentsSection() {
       bg_image: "/escapes.webp",
     },
   ];
+  const containerRef = useRef(null);
+  useGSAP(() => {
+    const sections = document.querySelectorAll(`.${styles.card}`);
+
+    gsap.to(`.${styles.card}`, {
+      xPercent: -300,
+      ease: "none",
+      scrollTrigger: {
+        trigger: `.${styles.card_container}`,
+        pin: true,
+        scrub: 1,
+        start: "top 10%",
+        end: `+=${
+          document.querySelector(`.${styles.card_container}`).offsetWidth * 2
+        }`,
+      },
+    });
+  }, []);
 
   return (
     <div className={styles.description_three}>
@@ -55,7 +79,7 @@ function PaymentsSection() {
         <br />
         bit by bit.
       </p>
-      <div className={styles.card_container}>
+      <div className={styles.card_container} ref={containerRef}>
         {cardData.map((item) => (
           <div
             key={item.id}

@@ -1,6 +1,6 @@
 .main {
   .head_container {
-    @apply flex justify-center items-center flex-col pt-16;
+    @apply flex justify-center items-center flex-col pt-16 p-44;
   }
   .header {
     @apply text-white text-[114px]  leading-none font-extrabold font-serif flex justify-center items-center text-center tracking-tight;
@@ -35,7 +35,7 @@
     }
   }
   .description_one {
-    @apply flex flex-col justify-center items-center mt-20;
+    @apply flex flex-col justify-center items-center;
     .text {
       @apply text-[113px] font-bold text-white font-serif leading-none text-center tracking-tight;
     }
@@ -69,7 +69,7 @@
     }
   }
   .description_three {
-    @apply pl-32 mt-[10%] pb-32;
+    @apply pl-32 mt-[10%] pb-28;
     .text_two {
       @apply text-[90px] font-serif text-white font-bold tracking-tight leading-none;
     }
@@ -96,7 +96,7 @@
       1 / 1 / 0 stretch;
     border-width: 1px;
     border-style: solid;
-    @apply mt-[250px] relative mb-36;
+    @apply mt-[200px] relative mb-36;
   }
   .description_five {
     border-image: linear-gradient(
